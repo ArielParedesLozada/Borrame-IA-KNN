@@ -1,13 +1,17 @@
 import numpy as np
 
 
+def _como_float(p: np.ndarray):
+    return p.astype(np.float32, copy=False)
+
+
 def distancia_euclidea(p1: np.ndarray, p2: np.ndarray):
-    d = np.linalg.norm(p1 - p2)
+    d = np.linalg.norm(_como_float(p1) - _como_float(p2))
     return d
 
 
 def distancia_manhattan(p1: np.ndarray, p2: np.ndarray):
-    d = np.sum(np.abs(p1 - p2))
+    d = np.sum(np.abs(_como_float(p1) - _como_float(p2)))
     return d
 
 

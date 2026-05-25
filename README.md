@@ -1,10 +1,13 @@
-# CLASIFICADOR DE MNIST CON KNN
+# CLASIFICADOR DE EMNIST DIGITS CON KNN
 
-Pues eso w
+Clasificador de digitos manuscritos usando K-Nearest Neighbors.
 
-Clasificar los numeros de MNIST con KNN, similar a lo hecho con la red neuronal
+El proyecto trabaja con el dataset `emnist/digits` de TensorFlow Datasets. Se comparan dos medidas de distancia para KNN:
 
-Ver error y esa cala
+- Euclidea
+- Manhattan
+
+El algoritmo de KNN se implementa manualmente; las librerias se usan para cargar datos, manejar arreglos y calcular metricas.
 
 ## INDICACIONES
 
